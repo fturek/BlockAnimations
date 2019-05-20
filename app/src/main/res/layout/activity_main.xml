@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="visible"
+            android:background="#ff0000"
+            android:layout_margin="20dp"/>
+
+    <View
+            android:id="@+id/view_to_show"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/fragment_container"
+            android:layout_alignStart="@id/fragment_container"
+            android:layout_marginTop="20dp"
+            android:background="#00ff00"/>
+
+    <ImageView
+            android:id="@+id/start_animation_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#0000ff"/>
+
+</RelativeLayout>
